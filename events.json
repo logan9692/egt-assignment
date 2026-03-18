@@ -1,0 +1,22 @@
+[
+
+{
+    "title": "Event Name",
+    "description": "About the event",
+    "date": "00/00/00",
+    "location": "place name"
+},
+{
+    "title2": "Event Name",
+    "description2": "About the event",
+    "date2": "00/00/00",
+    "location2": "place name"
+},
+{
+    "title3": "Event Name",
+    "description3": "About the event",
+    "date3": "00/00/00",
+    "location3": "place name"
+}
+
+]

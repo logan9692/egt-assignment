@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <!-- SET UP BOOTSTRAP, FONTAWESOME & LINK STYLESHEET -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Place your order </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="javascript.js" defer> </script>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  </head>
+
+  <body>
+
+    <!-- UTILITY BAR NO BOOTSTRAP -->
+
+    <div class="utility-bar">
+      
+        <a href="home.html"> <img class="top-logo" src="images/NEWLOGO.png" alt="Essex Gardens Trust Logo"></a>
+
+        <div class="utility-actions">
+
+          <div class="search">
+            
+            <button class="search-button" id="open-search"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+
+            <!-- Search Modal -->
+          
+            <dialog class="search-styling" id="search-modal">
+
+              <div class="layout"> 
+
+              <input class="search-bar" type="search" placeholder="Search Essex Gardens Trust">
+            
+              <button id="close-search"> <i class="fa-solid fa-xmark"></i> </button>
+
+            </dialog>
+          
+          </div>
+
+        <ul class="topbuttons">
+
+              <div class="settings">
+                    
+                <li class="utility-button">
+                  <a class="buttonstyle" id="openmodal"> <i class="fa-solid fa-gear utility-icon"></i> <span class="utility-text"> Settings </span></a>
+                </li>
+
+                <div class="settings-container">
+
+                  <dialog class="settings-styling" id="settings-modal">
+
+                    <div class="SettingsModal">
+
+                    <h1 class="SettingsPlacement SettingsTop"> <i class="fa-solid fa-gear utility-icon IconSize"></i> </h1>
+                    <h3 class="SettingsPlacement colouring SettingsBottom"> <strong> Settings </strong> </h3>
+
+                      <!-- FORM FOR APPEARANCE -->
+
+                      <form class="setting-background"> 
+
+                      <h3> Appearance </h3>
+
+                      <div class="form-row">
+                          <div class="form-column">
+                      <label for="lightmode"> Light Mode </label>
+                      <input type="radio" id="lightmode" name="mode" value="lightmode" checked ><br>
+                          </div>
+
+                          <div class="form-column">
+                      <label for="darkmode"> Dark Mode </label>
+                      <input type="radio" id="darkmode" name="mode" value="darkmode"><br>
+                          </div>
+
+                          <div class="form-column">
+                      <label for="highcontrast"> High Contrast </label>
+                      <input type="radio" id="highcontrast" name="mode" value="highcontrast"><br>
+                          </div>
+                      </div>
+
+                      </form>
+
+                      <!-- FORM FOR ACCESSIBILITY SETTINGS -->
+
+                      <form class="setting-background">
+
+                        <h3> Accessibility </h3>
+
+                        <div class="pub-selection">
+                        <label for="reduceTransparency"> Reduce Transparency </label>
+                        <input type="checkbox" id="reduceTransparency" name="accessibility" value="transparency" class="pubChoice"><br>
+                        </div>
+
+                        <div class="pub-selection">
+                        <label for="links"> Highlight Links </label>
+                        <input type="checkbox" id="highlightLinks" name="accessibility" value="highlightLinks" class="pubChoice"><br>
+                        </div>
+
+                        <div class="pub-selection">
+                        <label for="largeText"> Large Text</label>
+                        <input type="checkbox" id="textSize" name="accessibility" value="textSize" class="pubChoice"><br>
+                        </div>
+
+                      </form>
+
+                    <button id="close-settings" class="buttonstyling"> Close </button>
+
+                    </div>
+                  
+                  </dialog>
+
+                </div>
+
+              </div>
+
+              <li class="utility-button">
+                <a class="buttonstyle" href="joinus.html"> <i class="fa-solid fa-user-plus utility-icon"></i> <span class="utility-text"> Join Us </span></a>
+              </li>
+              <li class="utility-button">
+                <a class="buttonstyle" href="https://cafdonate.cafonline.org/14925#!/DonationDetails"> <i class="fa-solid fa-wallet utility-icon"></i> <span class="utility-text"> Donate </span></a>
+              </li>
+              <li class="utility-button">
+                <a class="buttonstyle" href="admin.html"> <i class="fa-solid fa-wrench utility-icon"></i> <span class="utility-text"> Admin </span></a>
+              </li>
+                
+        </ul>
+
+        </div>
+
+    </div>
+
+<!-- NAVIGATION BAR -->
+
+<nav class="navbar sticky-top navbar-expand-lg custom-navbar2 py-0 darkmode-navbar">
+  <div class="container">
+
+    <div class="d-flex justify-content-center overflow-auto flex-nowrap w-100">
+      <ul class="navbar-nav flex-row flex-nowrap">
+
+        <!-- NAV BAR BUTTONS -->
+        
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="aboutus.html">About Us</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="news&events.html">News & Events</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="gardens.html">Gardens</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="history.html">History</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="blogs.html">Blogs</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="contactus.html">Contact Us</a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+
+<h4 class="subtitle"> Order </h4>
+<h5 class="subheading"> Make your selection, then fill in your details. </h5>
+
+<div class="orderForm secondaryColour">
+
+    <form> 
+
+        <h4 class="form-title"> Select the publication(s) you would like to order. </h4>
+
+        <div class="pub-selection">
+        <label for="pub1"> The Living Landscape </label>
+        <input class="pubChoice" type="checkbox" id="" name="pub-name" value="" ><br>
+        </div>
+
+        <div class="pub-selection">
+        <label for="pub2"> Repton in Essex </label>
+        <input class="pubChoice" type="checkbox" id="" name="pub-name" value=""><br>
+        </div>
+
+        <div class="pub-selection">
+        <label for="pub3"> Lost Gardens of Thurrock </label>
+        <input class="pubChoice" type="checkbox" id="" name="pub-name" value=""><br>
+        </div>
+
+        <div class="pub-selection">
+        <label for="pub4"> Lancelot Brown </label>
+        <input class="pubChoice" type="checkbox" id="" name="pub-name" value=""><br>
+        </div>
+
+        <div class="pub-selection">
+        <label for="pub5"> Rooted in Essex </label>
+        <input class="pubChoice" type="checkbox" id="" name="pub-name" value="" ><br>
+        </div>
+
+        <div class="pub-selection">
+        <label for="pub6"> Paper Landscapes </label>
+        <input class="pubChoice" type="checkbox" id="" name="pub-name" value=""><br>
+        </div>
+
+        <h4 class="form-title"> Choose your format. </h4>
+
+            <div class="pub-selection">
+            <label for="physical"> Physical </label>
+            <input class="pubChoice" type="radio" id="" name="copy-type" value="" ><br>
+            </div>
+
+            <div class="pub-selection">
+            <label for="digital"> Digital</label>
+            <input class="pubChoice" type="radio" id="" name="copy-type" value=""><br>
+            </div>
+
+        <h4 class="form-title"> Fill in your contact details. </h4>
+
+            <div class="pub-selection">
+            <label for="name"> First Name </label>
+            <input class="pubChoice" type="text" id="" value="" ><br>
+            </div>
+
+            <div class="pub-selection">
+            <label for="name"> Surname </label>
+            <input class="pubChoice" type="text" id="" value="" ><br>
+            </div>
+
+            <div class="pub-selection">
+            <label for="name"> Email Address </label>
+            <input class="pubChoice" type="text" id="" value="" > <br>
+            </div>
+
+            <div class="pub-selection">
+            <label for="name"> Phone Number </label>
+            <input class="pubChoice" type="text" id="" value="" ><br>
+            </div>
+
+    </form>
+
+    <h4 class="form-title"> Payment details will be collected once we process your order. </h4>
+
+    <button id="order-modal" class="buttonstyling people-button"> Order <i class="fa-solid fa-angle-right"></i> </button>
+
+</div>
+
+<div class="bottom-spacing"></div>
+
+    <dialog id="order-popup">
+
+      <p class="popup-symbol"> <i class="fa-solid fa-circle-check"></i> </p>
+      <p class="popup-text"> Thanks for your order! </p>
+      <p class="popup-text"> Our team will email you from: info@essexgardenstrust.org.uk <br> with payment instructions. </p>
+      <div class="popup-buttons">
+        <a id="close-order-modal" class="Continuetext buttonstyling" href="publications.html" class="buttonstyling"> Return to publications </a>
+
+      </div>
+
+    </dialog>
+
+<!-- WEBPAGE FOOTER -->
+
+<footer>
+
+  <!-- DIVIDING LINE -->
+
+  <hr class="end-page"> 
+
+  <div class="align-footer fontColour">
+
+    <div class="footer-container fontColour"> 
+
+      <!-- INFO ABOUT THE CHARITY -->
+
+      <h4 class="title"> Essex Gardens Trust </h4>
+      <p class="footer-link"> <a class="link linkColour" href="https://thegardenstrust.org"> A member of The Gardens Trust </a> </p>
+      <p> Charity No. 1057876 </p>
+      <p> Company No. 3233796 </p>
+
+    </div>
+
+    <div class="footer-container fontColour"> 
+
+        <!-- NAV BAR LINKS -->
+
+    <h4 class="title"> Quick Links </h4>
+    <p class="footer-link"> <a class="linkColour" href="aboutus.html"> About Us </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="news&events.html"> News & Events </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="gardens.html"> Gardens </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="history.html"> History </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="blogs.html"> Blogs </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="contactus.html"> Contact Us </a> </p>
+      
+    </div>
+
+    <div class="footer-container fontColour"> 
+
+      <!-- JOIN THE COMMUNITY -->
+
+      <h4 class="title"> Join the Community </h4>
+      <p class="footer-link"> <a class="linkColour" href="joinus.html"> Membership </a> </p>
+      <p class="footer-link"> <a class="linkColour" href="joinus.html"> Volunteer </a> </p>
+      <p class="footer-link "> <a class="linkColour" href="https://cafdonate.cafonline.org/14925#!/DonationDetails"> Donate </a> </p>
+
+    </div>
+
+    <div class="footer-container"> 
+
+      <!-- CONTACT LINKS -->
+
+      <h4 class="title"> Get in Touch </h4>
+      <p class="footer-link"> <a class="fontColour" href="https://www.facebook.com/essexgardenstrust/?ref=bookmarks"> <i class="fa-brands fa-square-facebook social-logo"></i> </a>  <a href="https://x.com"> <i class="fa-brands fa-square-x-twitter social-logo"></i> </a> <a href="https://www.instagram.com" > <i class="fa-brands fa-square-instagram social-logo"></i> </a> <a href="mailto:info@essexgardenstrust.org.uk"> <i class="fa-solid fa-envelope social-logo"></i> </a>  </p>
+      
+    </div>
+  
+  </div>
+
+  <!-- LOGO AT BOTTOM OF PAGE -->
+
+  <img class="footer-logo" src="images/NEWLOGO.png">
+  
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

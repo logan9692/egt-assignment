@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <!-- SET UP BOOTSTRAP, FONTAWESOME & LINK STYLESHEET -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Inventories - Essex Gardens Trust</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="javascript.js" defer> </script>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  </head>
+
+  <body>
+
+    <!-- UTILITY BAR NO BOOTSTRAP -->
+
+    <div class="utility-bar">
+      
+        <a href="home.html"> <img class="top-logo" src="images/NEWLOGO.png" alt="Essex Gardens Trust Logo"></a>
+
+        <div class="utility-actions">
+
+          <div class="search">
+            
+            <button class="search-button" id="open-search"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+
+            <!-- Search Modal -->
+          
+            <dialog class="search-styling" id="search-modal">
+
+              <div class="layout"> 
+
+              <input class="search-bar" type="search" placeholder="Search Essex Gardens Trust">
+            
+              <button id="close-search"> <i class="fa-solid fa-xmark"></i> </button>
+
+            </dialog>
+          
+          </div>
+
+        <ul class="topbuttons">
+
+              <div class="settings">
+                    
+                <li class="utility-button">
+                  <a class="buttonstyle" id="openmodal"> <i class="fa-solid fa-gear utility-icon"></i> <span class="utility-text"> Settings </span></a>
+                </li>
+
+                <div class="settings-container">
+
+                  <dialog class="settings-styling" id="settings-modal">
+
+                    <div class="SettingsModal">
+
+                    <h1 class="SettingsPlacement SettingsTop"> <i class="fa-solid fa-gear utility-icon IconSize"></i> </h1>
+                    <h3 class="SettingsPlacement colouring SettingsBottom"> <strong> Settings </strong> </h3>
+
+                      <!-- FORM FOR APPEARANCE -->
+
+                      <form class="setting-background"> 
+
+                      <h3> Appearance </h3>
+
+                      <div class="form-row">
+                          <div class="form-column">
+                      <label for="lightmode"> Light Mode </label>
+                      <input type="radio" id="lightmode" name="mode" value="lightmode" checked ><br>
+                          </div>
+
+                          <div class="form-column">
+                      <label for="darkmode"> Dark Mode </label>
+                      <input type="radio" id="darkmode" name="mode" value="darkmode"><br>
+                          </div>
+
+                          <div class="form-column">
+                      <label for="highcontrast"> High Contrast </label>
+                      <input type="radio" id="highcontrast" name="mode" value="highcontrast"><br>
+                          </div>
+                      </div>
+
+                      </form>
+
+                      <!-- FORM FOR ACCESSIBILITY SETTINGS -->
+
+                      <form class="setting-background">
+
+                        <h3> Accessibility </h3>
+
+                        <div class="pub-selection">
+                        <label for="reduceTransparency"> Reduce Transparency </label>
+                        <input type="checkbox" id="reduceTransparency" name="accessibility" value="transparency" class="pubChoice"><br>
+                        </div>
+
+                        <div class="pub-selection">
+                        <label for="links"> Highlight Links </label>
+                        <input type="checkbox" id="highlightLinks" name="accessibility" value="highlightLinks" class="pubChoice"><br>
+                        </div>
+
+                        <div class="pub-selection">
+                        <label for="largeText"> Large Text</label>
+                        <input type="checkbox" id="textSize" name="accessibility" value="textSize" class="pubChoice"><br>
+                        </div>
+
+                      </form>
+
+                    <button id="close-settings" class="buttonstyling"> Close </button>
+
+                    </div>
+                  
+                  </dialog>
+
+                </div>
+
+              </div>
+
+              <li class="utility-button">
+                <a class="buttonstyle" href="joinus.html"> <i class="fa-solid fa-user-plus utility-icon"></i> <span class="utility-text"> Join Us </span></a>
+              </li>
+              <li class="utility-button">
+                <a class="buttonstyle" href="https://cafdonate.cafonline.org/14925#!/DonationDetails"> <i class="fa-solid fa-wallet utility-icon"></i> <span class="utility-text"> Donate </span></a>
+              </li>
+              <li class="utility-button">
+                <a class="buttonstyle" href="admin.html"> <i class="fa-solid fa-wrench utility-icon"></i> <span class="utility-text"> Admin </span></a>
+              </li>
+                
+        </ul>
+
+        </div>
+
+    </div>
+
+<!-- NAVIGATION BAR -->
+
+<nav class="navbar sticky-top navbar-expand-lg custom-navbar2 py-0 darkmode-navbar">
+  <div class="container">
+
+    <div class="d-flex justify-content-center overflow-auto flex-nowrap w-100">
+      <ul class="navbar-nav flex-row flex-nowrap">
+
+        <!-- NAV BAR BUTTONS -->
+        
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="aboutus.html">About Us</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="news&events.html">News & Events</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="gardens.html">Gardens</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="history.html">History</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="blogs.html">Blogs</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="contactus.html">Contact Us</a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+
+<h4 class="subtitle"> Inventories </h4>
+
+<div class="inventories-container">
+
+  <p> Essex Gardens Trust has a team of research volunteers who prepare Inventories of historic sites based on district council areas. The sites already researched are available as pdfs to download on this page. </p>
+  <p> The inventories below are ones that the Trust considers to be of local importance, either due to their quality or rarity, or to their association with a noted designer or horticulturalist.  </p>
+  <p> There are also some that were not included in the Inventory for various reasons: Some proved to be of minor significance, others have been too extensively altered to merit inclusion. Not infrequently adequate evaluation was impossible due to a lack of archive material or being unable to obtain permission to visit. </p>
+  <p> We has received invaluable support in the preparation of these Inventories from many individuals and organisations, and this is gratefully acknowledged.  We would like to thank the researchers without whose industry, enthusiasm and perseverance nothing could have been achieved. We are also very indebted to those owners who welcomed our researchers to their properties and often went to considerable trouble on our behalf. </p>
+  <p> We are also grateful to the Essex Record Office for their continuous help, advice, and permission to reproduce maps and illustrations.  </p>
+
+</div>
+
+<div class="inventories bottom-spacing">
+
+    <div class="inventory-tile midwhite">
+
+        <img class="inventoryImg" src="images/placeholderimg.png">
+        <h2 class="subtext"> Part 1 - Braintree <br> District </h2>
+        <button id="open-inventory-modal" class="buttonstyling pubbutton"> View <i class="fa-solid fa-angle-right"></i> </button>
+
+    </div>
+
+    <div class="inventory-tile midwhite">
+
+        <img class="inventoryImg" src="images/placeholderimg.png">
+        <h2 class="subtext"> Part 2 - Epping Forest District </h2>
+        <a href="" class="buttonstyling pubbutton"> View <i class="fa-solid fa-angle-right"></i> </a>
+
+    </div>
+
+    <div class="inventory-tile midwhite">
+
+        <img class="inventoryImg" src="images/placeholderimg.png">
+        <h2 class="subtext"> Part 3 - Uttlesford <br> District </h2>
+        <a href="" class="buttonstyling pubbutton"> View <i class="fa-solid fa-angle-right"></i> </a>
+
+    </div>
+
+    <div class="inventory-tile midwhite">
+
+        <img class="inventoryImg" src="images/placeholderimg.png">
+        <h2 class="subtext"> Part 4 - Maldon <br> District </h2>
+        <a href="" class="buttonstyling pubbutton"> View <i class="fa-solid fa-angle-right"></i> </a>
+
+    </div>
+
+    <div class="inventory-tile midwhite">
+
+        <img class="inventoryImg" src="images/placeholderimg.png">
+        <h2 class="subtext"> Part 5 - City of Chelmsford </h2>
+        <a href="" class="buttonstyling pubbutton"> View <i class="fa-solid fa-angle-right"></i> </a>
+
+    </div>
+
+    <div class="inventory-tile midwhite">
+
+        <img class="inventoryImg" src="images/placeholderimg.png">
+        <h2 class="subtext"> Part 6 - Brentwood District </h2>
+        <a href="" class="buttonstyling pubbutton"> View <i class="fa-solid fa-angle-right"></i> </a>
+
+    </div>
+
+    <div class="inventory-tile midwhite">
+
+        <img class="inventoryImg" src="images/placeholderimg.png">
+        <h2 class="subtext"> Part 7 - <br> Thurrock </h2>
+        <a href="" class="buttonstyling pubbutton"> View <i class="fa-solid fa-angle-right"></i> </a>
+
+    </div>
+
+    <div class="inventory-tile midwhite">
+
+        <img class="inventoryImg" src="images/placeholderimg.png">
+        <h2 class="subtext"> Part 8 - City of Southend-on-Sea </h2>
+        <a href="" class="buttonstyling pubbutton"> View <i class="fa-solid fa-angle-right"></i> </a>
+
+    </div>
+
+</div>
+
+<!-- Modals -->
+
+
+ <dialog id="inventory-popup">
+
+      <div class="popup-buttons">
+        <button id="closeInventory"> <i class="fa-solid fa-xmark xmark-display"></i> </button>
+      </div>
+
+      <!-- 26 -->
+       <div class="inventory-modal"> 
+
+        <h2 class="subheading colouring"> Part 1 - Braintree District </h2>
+
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+        <div class="inv-container"> <h2 class="subtext txtposition"> Inventory Title  </h2> <a href="mailto:info@essexgardenstrust.org.uk" class="buttonstyling buttonheight"> Download </a> </div>
+      
+    </dialog>
+
+
+
+  
+
+<!-- WEBPAGE FOOTER -->
+
+<footer>
+
+  <!-- DIVIDING LINE -->
+
+  <hr class="end-page"> 
+
+  <div class="align-footer fontColour">
+
+    <div class="footer-container fontColour"> 
+
+      <!-- INFO ABOUT THE CHARITY -->
+
+      <h4 class="title"> Essex Gardens Trust </h4>
+      <p class="footer-link"> <a class="link linkColour" href="https://thegardenstrust.org"> A member of The Gardens Trust </a> </p>
+      <p> Charity No. 1057876 </p>
+      <p> Company No. 3233796 </p>
+
+    </div>
+
+    <div class="footer-container fontColour"> 
+
+        <!-- NAV BAR LINKS -->
+
+    <h4 class="title"> Quick Links </h4>
+    <p class="footer-link"> <a class="linkColour" href="aboutus.html"> About Us </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="news&events.html"> News & Events </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="gardens.html"> Gardens </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="history.html"> History </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="blogs.html"> Blogs </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="contactus.html"> Contact Us </a> </p>
+      
+    </div>
+
+    <div class="footer-container fontColour"> 
+
+      <!-- JOIN THE COMMUNITY -->
+
+      <h4 class="title"> Join the Community </h4>
+      <p class="footer-link"> <a class="linkColour" href="joinus.html"> Membership </a> </p>
+      <p class="footer-link"> <a class="linkColour" href="joinus.html"> Volunteer </a> </p>
+      <p class="footer-link "> <a class="linkColour" href="https://cafdonate.cafonline.org/14925#!/DonationDetails"> Donate </a> </p>
+
+    </div>
+
+    <div class="footer-container"> 
+
+      <!-- CONTACT LINKS -->
+
+      <h4 class="title"> Get in Touch </h4>
+      <p class="footer-link"> <a class="fontColour" href="https://www.facebook.com/essexgardenstrust/?ref=bookmarks"> <i class="fa-brands fa-square-facebook social-logo"></i> </a>  <a href="https://x.com"> <i class="fa-brands fa-square-x-twitter social-logo"></i> </a> <a href="https://www.instagram.com" > <i class="fa-brands fa-square-instagram social-logo"></i> </a> <a href="mailto:info@essexgardenstrust.org.uk"> <i class="fa-solid fa-envelope social-logo"></i> </a>  </p>
+      
+    </div>
+  
+  </div>
+
+  <!-- LOGO AT BOTTOM OF PAGE -->
+
+  <img class="footer-logo" src="images/NEWLOGO.png">
+  
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <!-- SET UP BOOTSTRAP, FONTAWESOME & LINK STYLESHEET -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gardens - Essex Gardens Trust</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="javascript.js" defer > </script>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  </head>
+
+  <body>
+
+    <!-- UTILITY BAR NO BOOTSTRAP -->
+
+    <div class="utility-bar">
+      
+        <a href="home.html"> <img class="top-logo" src="images/NEWLOGO.png" alt="Essex Gardens Trust Logo"></a>
+
+        <div class="utility-actions">
+
+          <div class="search">
+            
+            <button class="search-button" id="open-search"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+
+            <!-- Search Modal -->
+          
+            <dialog class="search-styling" id="search-modal">
+
+              <div class="layout"> 
+
+              <input class="search-bar" type="search" placeholder="Search Essex Gardens Trust">
+            
+              <button id="close-search"> <i class="fa-solid fa-xmark"></i> </button>
+
+            </dialog>
+          
+          </div>
+
+        <ul class="topbuttons">
+
+              <div class="settings">
+                    
+                <li class="utility-button">
+                  <a class="buttonstyle" id="openmodal"> <i class="fa-solid fa-gear utility-icon"></i> <span class="utility-text"> Settings </span></a>
+                </li>
+
+                <div class="settings-container">
+
+                  <dialog class="settings-styling" id="settings-modal">
+
+                    <div class="SettingsModal">
+
+                    <h1 class="SettingsPlacement SettingsTop"> <i class="fa-solid fa-gear utility-icon IconSize"></i> </h1>
+                    <h3 class="SettingsPlacement colouring SettingsBottom"> <strong> Settings </strong> </h3>
+
+                      <!-- FORM FOR APPEARANCE -->
+
+                      <form class="setting-background"> 
+
+                      <h3> Appearance </h3>
+
+                      <div class="form-row">
+                          <div class="form-column">
+                      <label for="lightmode"> Light Mode </label>
+                      <input type="radio" id="lightmode" name="mode" value="lightmode" checked ><br>
+                          </div>
+
+                          <div class="form-column">
+                      <label for="darkmode"> Dark Mode </label>
+                      <input type="radio" id="darkmode" name="mode" value="darkmode"><br>
+                          </div>
+
+                          <div class="form-column">
+                      <label for="highcontrast"> High Contrast </label>
+                      <input type="radio" id="highcontrast" name="mode" value="highcontrast"><br>
+                          </div>
+                      </div>
+
+                      </form>
+
+                      <!-- FORM FOR ACCESSIBILITY SETTINGS -->
+
+                      <form class="setting-background">
+
+                        <h3> Accessibility </h3>
+
+                        <div class="pub-selection">
+                        <label for="reduceTransparency"> Reduce Transparency </label>
+                        <input type="checkbox" id="reduceTransparency" name="accessibility" value="transparency" class="pubChoice"><br>
+                        </div>
+
+                        <div class="pub-selection">
+                        <label for="links"> Highlight Links </label>
+                        <input type="checkbox" id="highlightLinks" name="accessibility" value="highlightLinks" class="pubChoice"><br>
+                        </div>
+
+                        <div class="pub-selection">
+                        <label for="largeText"> Large Text</label>
+                        <input type="checkbox" id="textSize" name="accessibility" value="textSize" class="pubChoice"><br>
+                        </div>
+
+                      </form>
+
+                    <button id="close-settings" class="buttonstyling"> Close </button>
+
+                    </div>
+                  
+                  </dialog>
+
+                </div>
+
+              </div>
+
+              <li class="utility-button">
+                <a class="buttonstyle" href="joinus.html"> <i class="fa-solid fa-user-plus utility-icon"></i> <span class="utility-text"> Join Us </span></a>
+              </li>
+              <li class="utility-button">
+                <a class="buttonstyle" href="https://cafdonate.cafonline.org/14925#!/DonationDetails"> <i class="fa-solid fa-wallet utility-icon"></i> <span class="utility-text"> Donate </span></a>
+              </li>
+              <li class="utility-button">
+                <a class="buttonstyle" href="admin.html"> <i class="fa-solid fa-wrench utility-icon"></i> <span class="utility-text"> Admin </span></a>
+              </li>
+                
+        </ul>
+
+        </div>
+
+    </div>
+
+<!-- NAVIGATION BAR -->
+
+<nav class="navbar sticky-top navbar-expand-lg custom-navbar2 py-0 darkmode-navbar">
+  <div class="container">
+
+    <div class="d-flex justify-content-center overflow-auto flex-nowrap w-100">
+      <ul class="navbar-nav flex-row flex-nowrap">
+
+        <!-- NAV BAR BUTTONS -->
+        
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="aboutus.html">About Us</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="news&events.html">News & Events</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour active" href="gardens.html">Gardens</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="history.html">History</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="blogs.html">Blogs</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="contactus.html">Contact Us</a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<!-- PAGE CONTENT -->
+
+<!-- top banner -->
+
+<div class="top-banner banner-img-gardens"> 
+
+  <h1 class="banner-title fontColour"> Gardens </h1>
+
+</div>
+
+<h4 class="subtitle fontColour"> Explore the landscapes of Essex. </h4>
+
+<!-- garden tiles -->
+
+<div class="gardens"> 
+
+  <!-- GARDEN 1 -->
+
+  <div class="rectangle-container secondaryColour">
+
+      <div class="rectangle-left-content">
+          <h1 class="gardenname"> Audley End House and Gardens </h1>
+          <h2 class="postcode"> CB11 4JF </h2>
+          <p> Grand Jacobean Mansion with park landscaped by Capability Brown and garden buildings by Robert Adam. </p>
+          <p> This location is managed by: English Heritage </p>
+          <a href="https://www.english-heritage.org.uk/visit/places/audley-end-house-and-gardens/" alt="Front exterior of Audley End House." class="buttonstyling gardenbutton"> Visit Website <i class="fa-solid fa-angle-right"></i> </a>
+      </div>
+
+      <div class="rectangle-right-content">
+          <img class="garden-thumbnail" src="images/audley-end-house.jpg">
+      </div>
+
+  </div>
+
+  <!-- GARDEN 2 -->
+
+  <div class="rectangle-container secondaryColour">
+    
+      <div class="rectangle-left-content">
+          <h1 class="gardenname"> Beth Chatto's Plants and Gardens </h1>
+          <h2 class="postcode"> CO7 7DB </h2>
+          <p> Inspirational and world-famous plantsman's garden created by Beth Chatto. Recently added to Historic England's National Heritage List for England. </p>
+          <p> This location is managed by: Beth Chatto Education Trust </p>
+          <a href="https://www.bethchatto.co.uk/garden-nursery/planning-a-visit.htm" alt="Welcome sign for Beth Chatto Gardens" class="buttonstyling gardenbutton"> Visit Website <i class="fa-solid fa-angle-right"></i> </a>
+      </div>
+
+      <div class="rectangle-right-content">
+          <img class="garden-thumbnail" src="images/bethchatto.jpg">
+      </div>
+
+  </div>
+  
+  <!-- GARDEN 3 -->
+
+  <div class="rectangle-container secondaryColour">
+    
+      <div class="rectangle-left-content">
+          <h1 class="gardenname"> The Gardens of Easton Lodge </h1>
+          <h2 class="postcode"> CM6 2BB </h2>
+          <p> Gardens created by Countess of Warwick and designed by Harold Peto, the gardens were abandoned in 1950 and are now undergoing restoration. </p>
+          <p> This location is managed by: Easton Lodge </p>
+          <a href="https://www.eastonlodge.co.uk/visit-us/visitor-information/" alt="A garden with a central pond" class="buttonstyling gardenbutton"> Visit Website <i class="fa-solid fa-angle-right"></i> </a>
+      </div>
+
+      <div class="rectangle-right-content">
+          <img class="garden-thumbnail" src="images/eastonlodge.jpg">
+      </div>
+
+  </div>
+
+  <!-- GARDEN 4 -->
+
+  <div class="rectangle-container secondaryColour">
+    
+      <div class="rectangle-left-content">
+          <h1 class="gardenname"> The Gibberd Garden </h1>
+          <h2 class="postcode"> CM17 ONA </h2>
+          <p> Created by the post-war architect Sir Frederick Gibberd (1908-1984). </p>
+          <p> This location is managed by: The Gibberd Garden Trust </p>
+          <a href="https://thegibberdgarden.co.uk/visitor-information/" alt="A statue of Gibberd in Gibberd Garden" class="buttonstyling gardenbutton"> Visit Website <i class="fa-solid fa-angle-right"></i> </a>
+      </div>
+
+      <div class="rectangle-right-content">
+          <img class="garden-thumbnail" src="images/gibberd.webp">
+      </div>
+
+  </div>
+
+  <!-- GARDEN 5 -->
+
+  <div class="rectangle-container secondaryColour">
+    
+      <div class="rectangle-left-content">
+          <h1 class="gardenname"> RHS Hyde Hall Gardens </h1>
+          <h2 class="postcode"> CM3 8ET </h2>
+          <p> Dynamic hillside garden created in 1955 by the Robinsons and bequeathed to the RHS in 1993. </p>
+          <p> This location is managed by: The Royal Horticultural Society </p>
+          <a href="https://www.rhs.org.uk/gardens/hyde-hall" alt="A garden path with a modern building in the background" class="buttonstyling gardenbutton"> Visit Website <i class="fa-solid fa-angle-right"></i> </a>
+      </div>
+
+      <div class="rectangle-right-content">
+          <img class="garden-thumbnail" src="images/hydehall.jpg">
+      </div>
+
+  </div>
+
+  <!-- GARDEN 6 -->
+
+  <div class="rectangle-container secondaryColour">
+    
+      <div class="rectangle-left-content">
+          <h1 class="gardenname"> Markshall Estate </h1>
+          <h2 class="postcode"> CO6 1TG </h2>
+          <p> Arboretum and contemporary walled lakeside garden designed by Brita von Schoenaich. </p>
+          <p> This location is managed by: Markshall Estate Charity </p>
+          <a href="https://www.markshall.org.uk/plan-your-visit/" alt="Autumn coloured trees next to a lake" class="buttonstyling gardenbutton"> Visit Website <i class="fa-solid fa-angle-right"></i> </a>
+      </div>
+
+      <div class="rectangle-right-content">
+          <img class="garden-thumbnail" src="images/markshall.jpg">
+      </div>
+
+  </div>
+
+</div>
+
+<!-- private gardens scheme -->
+
+<div class="PrivateGardenScheme secondaryColour">
+
+  <div class="ngs-content">
+
+    <div class="ngs-textcontent">
+
+      <div class="ngs-intro">
+
+      <img class="ngs-logo hideImg" src="images/ngslogo.jpeg">
+      <h2 class="ngs-title ngs-font fontColour" > Visit private gardens through the National Garden Scheme </h2>
+
+      </div>
+
+      <p class="ngs-text"> The National Garden Scheme gives visitors unique access to over 3,300 exceptional private gardens in England, Wales, Northern Ireland and the Channel Islands, and raises impressive amounts of money for nursing and health charities through admissions, teas and cake. </p>
+      <a href="https://findagarden.ngs.org.uk/garden-list?search_term=Essex,%20England&search_bounds=52.41147955162821,1.5174678339240661,51.12219424837176,-0.5659154339240661&sort_by=By%20opening%20date&filter%5Bdays_open%5D=next-28-days&filter%5Bopening_type%5D=opening&filter%5Bgeo_bounding_box%5D=52.41147955162821,1.5174678339240661,51.12219424837176,-0.5659154339240661" class="buttonstyling"> Visit Website <i class="fa-solid fa-angle-right"></i> </a>
+
+    </div>
+
+    <div class="ngs-photos">
+
+      <img class="ngsopenimg topleft" src="images/ngsopen.webp" alt="A National Garden Scheme sign for an open garden">
+      <img class="ngsopenimg topright" src="images/ngsbag.jpeg" alt="A National Garden Scheme bag hanging next to flower pots">
+      <img class="ngsopenimg bottomleft" src="images/ngsopen2.jpg" alt="A National Garden Scheme sign for an open garden">
+      <img class="ngsopenimg bottomright" src="images/ngssign.jpg" alt="A National Garden Scheme sign on a garden flower bed">
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- WEBPAGE FOOTER -->
+
+<footer class="footer-colouring-gardens">
+
+  <!-- DIVIDING LINE -->
+
+  <hr class="end-page"> 
+
+  <div class="align-footer fontColour">
+
+    <div class="footer-container fontColour"> 
+
+      <!-- INFO ABOUT THE CHARITY -->
+
+      <h4 class="title"> Essex Gardens Trust </h4>
+      <p class="footer-link"> <a class="link linkColour" href="https://thegardenstrust.org"> A member of The Gardens Trust </a> </p>
+      <p> Charity No. 1057876 </p>
+      <p> Company No. 3233796 </p>
+
+    </div>
+
+    <div class="footer-container fontColour"> 
+
+        <!-- NAV BAR LINKS -->
+
+    <h4 class="title"> Quick Links </h4>
+    <p class="footer-link"> <a class="linkColour" href="aboutus.html"> About Us </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="news&events.html"> News & Events </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="gardens.html"> Gardens </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="history.html"> History </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="blogs.html"> Blogs </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="contactus.html"> Contact Us </a> </p>
+      
+    </div>
+
+    <div class="footer-container fontColour"> 
+
+      <!-- JOIN THE COMMUNITY -->
+
+      <h4 class="title"> Join the Community </h4>
+      <p class="footer-link"> <a class="linkColour" href="joinus.html"> Membership </a> </p>
+      <p class="footer-link"> <a class="linkColour" href="joinus.html"> Volunteer </a> </p>
+      <p class="footer-link "> <a class="linkColour" href="https://cafdonate.cafonline.org/14925#!/DonationDetails"> Donate </a> </p>
+
+    </div>
+
+    <div class="footer-container"> 
+
+      <!-- CONTACT LINKS -->
+
+      <h4 class="title"> Get in Touch </h4>
+      <p class="footer-link"> <a class="fontColour" href="https://www.facebook.com/essexgardenstrust/?ref=bookmarks"> <i class="fa-brands fa-square-facebook social-logo"></i> </a>  <a href="https://x.com"> <i class="fa-brands fa-square-x-twitter social-logo"></i> </a> <a href="https://www.instagram.com" > <i class="fa-brands fa-square-instagram social-logo"></i> </a> <a href="mailto:info@essexgardenstrust.org.uk"> <i class="fa-solid fa-envelope social-logo"></i> </a>  </p>
+      
+    </div>
+  
+  </div>
+
+  <!-- LOGO AT BOTTOM OF PAGE -->
+
+  <img class="footer-logo" src="images/NEWLOGO.png">
+  
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

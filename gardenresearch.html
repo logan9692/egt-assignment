@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <!-- SET UP BOOTSTRAP, FONTAWESOME & LINK STYLESHEET -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Garden Research - Essex Gardens Trust</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="javascript.js" defer> </script>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+
+      document.addEventListener("DOMContentLoaded", function () {
+
+      const savedMode = localStorage.getItem("mode");
+
+      if (savedMode == "darkmode") {
+        document.body.classList.add("darkmode");
+      }
+      else if (savedMode == "highcontrast") {
+        document.body.classList.add("highcontrast");
+      }
+      else if (savedMode == "lightmode") {
+        document.body.classList.add("lightmode");
+      }
+      else if (!savedMode) {
+        document.body.classList.add("lightmode");
+      }
+
+      const savedTransparency = localStorage.getItem("reduceTransparency");
+
+      if (savedTransparency == "true") {
+        document.body.classList.add("reduceTransparency");
+        reduceTransparency.checked = true;
+      }
+      else if (!savedTransparency) {
+        localStorage.removeItem("reduceTransparency");
+      }
+
+    });
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <!-- UTILITY BAR NO BOOTSTRAP -->
+
+    <div class="utility-bar">
+      
+        <a href="home.html"> <img class="top-logo" src="images/NEWLOGO.png" alt="Essex Gardens Trust Logo"></a>
+
+        <div class="utility-actions">
+
+          <div class="search">
+            
+            <button class="search-button" id="open-search"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+
+            <!-- Search Modal -->
+          
+            <dialog class="search-styling" id="search-modal">
+
+              <div class="layout"> 
+
+              <input class="search-bar" type="search" placeholder="Search Essex Gardens Trust">
+            
+              <button id="close-search"> <i class="fa-solid fa-xmark"></i> </button>
+
+            </dialog>
+          
+          </div>
+
+        <ul class="topbuttons">
+
+              <div class="settings">
+                    
+                <li class="utility-button">
+                  <a class="buttonstyle" id="openmodal"> <i class="fa-solid fa-gear utility-icon"></i> <span class="utility-text"> Settings </span></a>
+                </li>
+
+                <div class="settings-container">
+
+                  <dialog class="settings-styling" id="settings-modal">
+
+                    <div class="SettingsModal">
+
+                    <h1 class="SettingsPlacement SettingsTop"> <i class="fa-solid fa-gear utility-icon IconSize"></i> </h1>
+                    <h3 class="SettingsPlacement colouring SettingsBottom"> <strong> Settings </strong> </h3>
+
+                      <!-- FORM FOR APPEARANCE -->
+
+                      <form class="setting-background"> 
+
+                      <h3> Appearance </h3>
+
+                      <div class="form-row">
+                          <div class="form-column">
+                      <label for="lightmode"> Light Mode </label>
+                      <input type="radio" id="lightmode" name="mode" value="lightmode" checked ><br>
+                          </div>
+
+                          <div class="form-column">
+                      <label for="darkmode"> Dark Mode </label>
+                      <input type="radio" id="darkmode" name="mode" value="darkmode"><br>
+                          </div>
+
+                          <div class="form-column">
+                      <label for="highcontrast"> High Contrast </label>
+                      <input type="radio" id="highcontrast" name="mode" value="highcontrast"><br>
+                          </div>
+                      </div>
+
+                      </form>
+
+                      <!-- FORM FOR ACCESSIBILITY SETTINGS -->
+
+                      <form class="setting-background">
+
+                        <h3> Accessibility </h3>
+
+                        <div class="pub-selection">
+                        <label for="reduceTransparency"> Reduce Transparency </label>
+                        <input type="checkbox" id="reduceTransparency" name="accessibility" value="transparency" class="pubChoice"><br>
+                        </div>
+
+                        <div class="pub-selection">
+                        <label for="links"> Highlight Links </label>
+                        <input type="checkbox" id="highlightLinks" name="accessibility" value="highlightLinks" class="pubChoice"><br>
+                        </div>
+
+                        <div class="pub-selection">
+                        <label for="largeText"> Large Text</label>
+                        <input type="checkbox" id="textSize" name="accessibility" value="textSize" class="pubChoice"><br>
+                        </div>
+
+                      </form>
+
+                    <button id="close-settings" class="buttonstyling"> Close </button>
+
+                    </div>
+                  
+                  </dialog>
+
+                </div>
+
+              </div>
+
+              <li class="utility-button">
+                <a class="buttonstyle" href="joinus.html"> <i class="fa-solid fa-user-plus utility-icon"></i> <span class="utility-text"> Join Us </span></a>
+              </li>
+              <li class="utility-button">
+                <a class="buttonstyle" href="https://cafdonate.cafonline.org/14925#!/DonationDetails"> <i class="fa-solid fa-wallet utility-icon"></i> <span class="utility-text"> Donate </span></a>
+              </li>
+              <li class="utility-button">
+                <a class="buttonstyle" href="admin.html"> <i class="fa-solid fa-wrench utility-icon"></i> <span class="utility-text"> Admin </span></a>
+              </li>
+                
+        </ul>
+
+        </div>
+
+    </div>
+
+<!-- NAVIGATION BAR -->
+
+<nav class="navbar sticky-top navbar-expand-lg custom-navbar2 py-0 darkmode-navbar">
+  <div class="container">
+
+    <div class="d-flex justify-content-center overflow-auto flex-nowrap w-100">
+      <ul class="navbar-nav flex-row flex-nowrap">
+
+        <!-- NAV BAR BUTTONS -->
+        
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="aboutus.html">About Us</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="news&events.html">News & Events</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="gardens.html">Gardens</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="history.html">History</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="blogs.html">Blogs</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="contactus.html">Contact Us</a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+
+<h4 class="subtitle"> Garden Research </h4>
+
+<div class="intro-container">
+  
+  <div class="left-section ">
+
+    <h1 class="title">Preserving & enhancing the <br><span class="title">local landscape</span></h1>
+
+    <p class="fontColour"> Our goal is to preserve, enhance and re-create for the education and enjoyment of the public, garden land that may exist or have existed in Essex. </p> </p>
+    <p class="fontColour"> <br> In order to do this, it is first necessary to find out what exists or has existed. Our researchers do this through examining old and current maps, other archived material and visiting the area to see what is on the ground. </p>
+    <p class="fontColour"> <br>  We have already done this for six council districts and one unitary authority in Essex & have produced inventories for each one. These can be found on our inventories page. </p>
+
+    <a href="publications.html" class=" intro-button buttonstyling"> Publications <i class="fa-solid fa-angle-right"></i> </a>
+
+  </div>
+
+    <img class="intro-image-2" src="images/gardenresearch.png">
+
+</div>
+
+<div class="previous-projects secondaryColour">
+  <h2 class="colouring"> Previous Projects </h2>
+
+  <p> We have worked with different organisations in the past including the Essex Heritage Trust with Emma Cannell to help define the historic gardens & designed landspaces in Southend. </p>
+  <p> This project concluded in the Summer of 2024 after covering & documenting 14 of the cities sites. </p>
+  <p> For the duration of this project, Essex Gardens Trust was able to get involved with the local community to promote our purpose and educate people about the importance of our greenspaces. </p>
+  <p> If you are interested in volunteering with our research team, get in touch below! </p>
+  <a href="volunteer.html" class="buttonstyling gardenbutton"> Volunteer <i class="fa-solid fa-angle-right"></i> </a>
+</div>
+
+<div class="explore-more-container secondaryColour">
+
+  <h2 class="title fontColour">  Where to next? </h2>
+
+  <div class="explore-more-content"> 
+
+    <div class="explore-content"> 
+
+      <a href="publications.html" class="explore-button-design linkColour"> <i class="fa-solid fa-file explore-content-icon"> </i> <br> Publications </a>
+
+    </div>
+
+    <div class="explore-content"> 
+
+      <a href="inventories.html" class="explore-button-design linkColour"> <i class="fa-solid fa-microscope explore-content-icon"></i> <br> Inventories </a>
+
+    </div>
+
+    <div class="explore-content"> 
+
+      <a href="conservation.html" class="explore-button-design linkColour"> <i class="fa-solid fa-seedling explore-content-icon"></i> <br> Conservation </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+  
+
+<!-- WEBPAGE FOOTER -->
+
+<footer class="footer-colouring-offwhite">
+
+  <!-- DIVIDING LINE -->
+
+  <hr class="end-page"> 
+
+  <div class="align-footer fontColour">
+
+    <div class="footer-container fontColour"> 
+
+      <!-- INFO ABOUT THE CHARITY -->
+
+      <h4 class="title"> Essex Gardens Trust </h4>
+      <p class="footer-link"> <a class="link linkColour" href="https://thegardenstrust.org"> A member of The Gardens Trust </a> </p>
+      <p> Charity No. 1057876 </p>
+      <p> Company No. 3233796 </p>
+
+    </div>
+
+    <div class="footer-container fontColour"> 
+
+        <!-- NAV BAR LINKS -->
+
+    <h4 class="title"> Quick Links </h4>
+    <p class="footer-link"> <a class="linkColour" href="aboutus.html"> About Us </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="news&events.html"> News & Events </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="gardens.html"> Gardens </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="history.html"> History </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="blogs.html"> Blogs </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="contactus.html"> Contact Us </a> </p>
+      
+    </div>
+
+    <div class="footer-container fontColour"> 
+
+      <!-- JOIN THE COMMUNITY -->
+
+      <h4 class="title"> Join the Community </h4>
+      <p class="footer-link"> <a class="linkColour" href="joinus.html"> Membership </a> </p>
+      <p class="footer-link"> <a class="linkColour" href="joinus.html"> Volunteer </a> </p>
+      <p class="footer-link "> <a class="linkColour" href="https://cafdonate.cafonline.org/14925#!/DonationDetails"> Donate </a> </p>
+
+    </div>
+
+    <div class="footer-container"> 
+
+      <!-- CONTACT LINKS -->
+
+      <h4 class="title"> Get in Touch </h4>
+      <p class="footer-link"> <a class="fontColour" href="https://www.facebook.com/essexgardenstrust/?ref=bookmarks"> <i class="fa-brands fa-square-facebook social-logo"></i> </a>  <a href="https://x.com"> <i class="fa-brands fa-square-x-twitter social-logo"></i> </a> <a href="https://www.instagram.com" > <i class="fa-brands fa-square-instagram social-logo"></i> </a> <a href="mailto:info@essexgardenstrust.org.uk"> <i class="fa-solid fa-envelope social-logo"></i> </a>  </p>
+      
+    </div>
+  
+  </div>
+
+  <!-- LOGO AT BOTTOM OF PAGE -->
+
+  <img class="footer-logo" src="images/NEWLOGO.png">
+  
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
