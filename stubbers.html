@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <!-- SET UP BOOTSTRAP, FONTAWESOME & LINK STYLESHEET -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Stubbers - Essex Gardens Trust</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="javascript.js" defer> </script>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  </head>
+
+  <body>
+
+    <!-- UTILITY BAR NO BOOTSTRAP -->
+
+    <div class="utility-bar">
+      
+        <a href="home.html"> <img class="top-logo" src="images/NEWLOGO.png" alt="Essex Gardens Trust Logo"></a>
+
+        <div class="utility-actions">
+
+          <div class="search">
+            
+            <button class="search-button" id="open-search"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+
+            <!-- Search Modal -->
+          
+            <dialog class="search-styling" id="search-modal">
+
+              <div class="layout"> 
+
+              <input class="search-bar" type="search" placeholder="Search Essex Gardens Trust">
+            
+              <button id="close-search"> <i class="fa-solid fa-xmark"></i> </button>
+
+            </dialog>
+          
+          </div>
+
+        <ul class="topbuttons">
+
+              <div class="settings">
+                    
+                <li class="utility-button">
+                  <a class="buttonstyle" id="openmodal"> <i class="fa-solid fa-gear utility-icon"></i> <span class="utility-text"> Settings </span></a>
+                </li>
+
+                <div class="settings-container">
+
+                  <dialog class="settings-styling" id="settings-modal">
+
+                    <div class="SettingsModal">
+
+                    <h1 class="SettingsPlacement SettingsTop"> <i class="fa-solid fa-gear utility-icon IconSize"></i> </h1>
+                    <h3 class="SettingsPlacement colouring SettingsBottom"> <strong> Settings </strong> </h3>
+
+                      <!-- FORM FOR APPEARANCE -->
+
+                      <form class="setting-background"> 
+
+                      <h3> Appearance </h3>
+
+                      <div class="form-row">
+                          <div class="form-column">
+                      <label for="lightmode"> Light Mode </label>
+                      <input type="radio" id="lightmode" name="mode" value="lightmode" checked ><br>
+                          </div>
+
+                          <div class="form-column">
+                      <label for="darkmode"> Dark Mode </label>
+                      <input type="radio" id="darkmode" name="mode" value="darkmode"><br>
+                          </div>
+
+                          <div class="form-column">
+                      <label for="highcontrast"> High Contrast </label>
+                      <input type="radio" id="highcontrast" name="mode" value="highcontrast"><br>
+                          </div>
+                      </div>
+
+                      </form>
+
+                      <!-- FORM FOR ACCESSIBILITY SETTINGS -->
+
+                      <form class="setting-background">
+
+                        <h3> Accessibility </h3>
+
+                        <div class="pub-selection">
+                        <label for="reduceTransparency"> Reduce Transparency </label>
+                        <input type="checkbox" id="reduceTransparency" name="accessibility" value="transparency" class="pubChoice"><br>
+                        </div>
+
+                        <div class="pub-selection">
+                        <label for="links"> Highlight Links </label>
+                        <input type="checkbox" id="highlightLinks" name="accessibility" value="highlightLinks" class="pubChoice"><br>
+                        </div>
+
+                        <div class="pub-selection">
+                        <label for="largeText"> Large Text</label>
+                        <input type="checkbox" id="textSize" name="accessibility" value="textSize" class="pubChoice"><br>
+                        </div>
+
+                      </form>
+
+                    <button id="close-settings" class="buttonstyling"> Close </button>
+
+                    </div>
+                  
+                  </dialog>
+
+                </div>
+
+              </div>
+
+              <li class="utility-button">
+                <a class="buttonstyle" href="joinus.html"> <i class="fa-solid fa-user-plus utility-icon"></i> <span class="utility-text"> Join Us </span></a>
+              </li>
+              <li class="utility-button">
+                <a class="buttonstyle" href="https://cafdonate.cafonline.org/14925#!/DonationDetails"> <i class="fa-solid fa-wallet utility-icon"></i> <span class="utility-text"> Donate </span></a>
+              </li>
+              <li class="utility-button">
+                <a class="buttonstyle" href="admin.html"> <i class="fa-solid fa-wrench utility-icon"></i> <span class="utility-text"> Admin </span></a>
+              </li>
+                
+        </ul>
+
+        </div>
+
+    </div>
+
+<!-- NAVIGATION BAR -->
+
+<nav class="navbar sticky-top navbar-expand-lg custom-navbar2 py-0 darkmode-navbar">
+  <div class="container">
+
+    <div class="d-flex justify-content-center overflow-auto flex-nowrap w-100">
+      <ul class="navbar-nav flex-row flex-nowrap">
+
+        <!-- NAV BAR BUTTONS -->
+        
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="aboutus.html">About Us</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="news&events.html">News & Events</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="gardens.html">Gardens</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="history.html">History</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="blogs.html">Blogs</a></li>
+        <li class="nav-item me-4 text-nowrap"><a class="nav-link textcolour" href="contactus.html">Contact Us</a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+
+<h4 class="subtitle"> Stubbers</h4>
+<h5 class="subheading"> An example page for all historic gardens </h5>
+
+<div class="inventories-container footer-colouring-offwhite">
+
+<p> Stubbers was once the home of plantsman William Coys (1560-1627), who is credited with growing Yucca gloriosa which first flowered at Stubbers in 1604. In the same year the Flemish physician and botanist Matthias L’Obel  recorded many bulbs growing at Stubbers including Colchicum, Crocus, Allium, Fritillaria and Hyacinth. 
+ <br><br></p>
+
+<p> William Coys collected both native and exotic plants and seeds for his garden at Stubbers and his collection could be considered to predate the earliest botanical garden in Oxford (founded in 1621). It was already established and well-known to John Gerard in 1597. The earliest of Coys’ plant lists (1616-1617) is the ‘oldest known manuscript list of an English garden, in which the plants are properly distinguished by their scientific names’ (Gunther, 1922). <br><br></p>
+
+<p> It was to Stubbers that the Ivy-leaved Toadflax, Cymbalaria muralis, and the Yellow Figwort, Scrophularia vernalis were brought from Spain by the Flemish plant hunter Dr. William Boel; here that the tomato – or love apple, Solanum lycopersicum - from Central America was grown (although not appreciated for its eating qualities); and it was here, in 1617, that the Jerusalem Artichoke, Helianthus tuberosus (from North America) was planted (given by his friend John Goodyer who described it as causing: ‘a filthie loathsome stinking winde within the bodie, thereby causing the belly to bee pained and tormented, and are a meat more fit for swine than men’). 
+<br><br></p>
+
+<p> William Coys also studied the new art of beer brewing and the culture of yeast, which were printed in 1605 by L’Obel, and his account helped to make ‘English Beer, from Barley and Hops famous in Netherland, for England yields plenty of Hops’ (Moryson, 1617).
+ <br><br></p>
+
+<p> The flower garden at Stubbers was seemingly situated at the south-east corner of the house, in what became known as the Mulberry Garden (Gunther, 1922), and it has been surmised that there were between 5 and 6 walled gardens (Smith, 1996) to grow his large collection of plants. 
+<br><br></p>
+
+<p> Stubbers was sold out of the Coys family in 1642, and thereafter passed through several owners until it was bought in 1689 by Sir William Russell. <br><br></p>
+
+<p> In 1796 Humphry Repton was called in by the great grandson, another William Russell, to redesign the grounds, which resulted in the destruction of Coys garden. Excavations in the 1970s revealed remnants of Repton‘s garden walls and pavilion.  There is a surviving walled garden (but when this was constructed is not certain). The Repton Red Book on Stubbers (which is very badly fire damaged) is held at the Albert Sloman Library, University of Essex (although its present location is actually at ERO whilst the conservators there try to restore it).
+<br><br></p>
+
+<p> The house was demolished in 1960 and the grounds are now home to a very popular not-for-profit adventure activity centre, utilising the lakes and hillocks which resulted from gravel extraction in adjacent fields in the 1970s, whilst the walled garden is presently used as a wedding venue.
+<br><br></p>
+
+</div>
+
+<!-- WEBPAGE FOOTER -->
+
+<footer>
+
+  <!-- DIVIDING LINE -->
+
+  <hr class="end-page"> 
+
+  <div class="align-footer fontColour">
+
+    <div class="footer-container fontColour"> 
+
+      <!-- INFO ABOUT THE CHARITY -->
+
+      <h4 class="title"> Essex Gardens Trust </h4>
+      <p class="footer-link"> <a class="link linkColour" href="https://thegardenstrust.org"> A member of The Gardens Trust </a> </p>
+      <p> Charity No. 1057876 </p>
+      <p> Company No. 3233796 </p>
+
+    </div>
+
+    <div class="footer-container fontColour"> 
+
+        <!-- NAV BAR LINKS -->
+
+    <h4 class="title"> Quick Links </h4>
+    <p class="footer-link"> <a class="linkColour" href="aboutus.html"> About Us </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="news&events.html"> News & Events </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="gardens.html"> Gardens </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="history.html"> History </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="blogs.html"> Blogs </a> </p>
+    <p class="footer-link"> <a class="linkColour" href="contactus.html"> Contact Us </a> </p>
+      
+    </div>
+
+    <div class="footer-container fontColour"> 
+
+      <!-- JOIN THE COMMUNITY -->
+
+      <h4 class="title"> Join the Community </h4>
+      <p class="footer-link"> <a class="linkColour" href="joinus.html"> Membership </a> </p>
+      <p class="footer-link"> <a class="linkColour" href="joinus.html"> Volunteer </a> </p>
+      <p class="footer-link "> <a class="linkColour" href="https://cafdonate.cafonline.org/14925#!/DonationDetails"> Donate </a> </p>
+
+    </div>
+
+    <div class="footer-container"> 
+
+      <!-- CONTACT LINKS -->
+
+      <h4 class="title"> Get in Touch </h4>
+      <p class="footer-link"> <a class="fontColour" href="https://www.facebook.com/essexgardenstrust/?ref=bookmarks"> <i class="fa-brands fa-square-facebook social-logo"></i> </a>  <a href="https://x.com"> <i class="fa-brands fa-square-x-twitter social-logo"></i> </a> <a href="https://www.instagram.com" > <i class="fa-brands fa-square-instagram social-logo"></i> </a> <a href="mailto:info@essexgardenstrust.org.uk"> <i class="fa-solid fa-envelope social-logo"></i> </a>  </p>
+      
+    </div>
+  
+  </div>
+
+  <!-- LOGO AT BOTTOM OF PAGE -->
+
+  <img class="footer-logo" src="images/NEWLOGO.png">
+  
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
